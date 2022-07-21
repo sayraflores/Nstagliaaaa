@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* nav bar */
+/* nav bar */
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    background-color: black;
+    padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+    color:brown;
+    font-size: 20px;
+    margin: 12px;
+}
+.logo {
+height: 24px;
+margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+    background-color: #242423
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* end of nav bar */
+/* end of nav bar */
+
+/* start of footer */
+/* start of footer */
+
+.newsletter {
+    background-color: #242423;
+    color: white;
+    padding: 2rem 10vw;
+    border: solid 2px wheat;
+}
+
+.newsletter-text h1{
+font-size: 25px;
+}
+i {
+    color: white;
+    padding: 3px;
+    margin: 22px;
+    font-size: 18px;
+    text-decoration:
 }
