@@ -1,0 +1,19 @@
+
+.newsletter {
+    background-color: #242423;
+    color: white;
+    /* padding: 2rem 10vw; */
+    border: solid 2px wheat;
+    height: 100px;
+}
+
+.newsletter-text h1{
+font-size: 25px;
+}
+i {
+    color: white;
+    padding: 3px;
+    margin: 22px;
+    font-size: 18px;
+    
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+/* nav bar */
+/* nav bar */
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    float: right;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    background-color: black;
+    padding: 15px;
+}
+
+li {
+    color:brown;
+    font-size: 20px;
+    margin: 12px;
+}
+.logo {
+height: 24px;
+margin: 15px;
+}
+
+.navbar {
+    background-color: #242423;
+    height: 60px;
+    padding: 10px 40px;
+}
+
+.fa-solidfa-magnifying-glass{
+    background-color: black;
+}
+
+/* end of nav bar */
+/* end of nav bar */

@@ -1,20 +1,26 @@
-import React from 'react'
-import '../App.css'
-import blogo from '../images/whitelogo.png';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
-  return (
-    
-  <div className='navbar'>  
- <img  className='logo' src ={blogo} alt =""></img>
-    <ul>
-      <li> <a href ="index.html">Home</a></li>
-      <li> <a href ="products.html">Shop</a></li>
-      <li> <a href ="contact.html">Contact</a></li> 
-      <li> <a href ="contact.html">FAQ'S</a></li> 
 
+  return (
+    <>
+  <div className='navbar'> 
+   <i className="fa-solid fa-magnifying-glass"></i>
+ <img  className='logo' src ={`images/whitelogo.png`} alt =""></img>
+ 
+    <ul>
+    <li><Link to='/Home'>Home</Link></li>
+      <li><Link to='/Shop'>Shop</Link></li>
+      <li><Link to='/Contact'>Contact</Link></li>
+      <li><Link to='/Faq'>FAQ</Link></li>
     </ul>
+
+
+
     </div>
+    </>
   )
 }
 

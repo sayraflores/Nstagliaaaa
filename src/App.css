@@ -4,60 +4,86 @@
     font-family: 'Jost', sans-serif;
 }
 
-/* nav bar */
-/* nav bar */
+/* THE VIDEO ON CONTACT PAGE */
+/* THE VIDEO ON CONTACT PAGE */
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-    justify-content: space-around;
-    float: right;
-}
+#nstalgiaVideo {
+    position: fixed;  /* keeps the video in place when user scrolls  */
+   min-width: 100%;  /* cover entire page */
+   min-height: 100%; /* cover entire page */
+    object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
+    z-index: -1; /* use this to send img to background */
+ }
+ 
+ /* form on contact us page  */
+  /* form on contact us page  */
+ .my-form {
+   padding:20px;
+   font-size: 120%; 
+   color:white;
+   border-style: double;
+ }
+ 
+ .my-form .form-group {
+   padding-bottom:15px;
+ }
+ 
+ .my-form label{
+   display:block;
+ }
+ 
+ .my-form input [type="text"], .my-form textarea{
+   padding:5px;
+   width:20%;
+ }
+ 
+ .my-form input[type="submit"] {
+   background-color: gray;
+   color: white; /* color goes to text */
+   padding:10px 15px;
+   border:none;
+ }
+ 
+ /* footer with social media links */
+  /* footer with social media links */
+  footer {
+   background-color: #333;
+  }
+  .statementpt2 {
+    text-align: center;
 
-li a {
-    text-decoration: none;
-    color: white;
-}
-li a:hover {
-    background-color: black;
-    padding: 15px;
-}
+  }
+  .statement {
+    padding: 0;
+    text-align: center;
+  }
+ .fa {
+   padding: 10px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ /* Add a hover effect */
+ .fa:hover {
+   opacity: 0.7;
+ }
+ 
+ 
+ /* instagram */
+ .fa-instagram {
+   color: white;
+    text-align: center;
+ }
+ 
+ /* Twitter */
+ .fa-twitter {
+   color: darkgoldenrod;
+ }
+ 
+ /* facebook */
+ .fa-facebook {
+   color: darkgoldenrod;
+ }
 
-li {
-    color:brown;
-    font-size: 20px;
-    margin: 12px;
-}
-.logo {
-height: 24px;
-margin: 15px;
-}
-
-.navbar {
-    background-color: #242423
-}
-
-/* end of nav bar */
-/* end of nav bar */
-
-/* start of footer */
-/* start of footer */
-
-.newsletter {
-    background-color: #242423;
-    color: white;
-    padding: 2rem 10vw;
-    border: solid 2px wheat;
-}
-
-.newsletter-text h1{
-font-size: 25px;
-}
-i {
-    color: white;
-    padding: 3px;
-    margin: 22px;
-    font-size: 18px;
-    text-decoration:
-}
