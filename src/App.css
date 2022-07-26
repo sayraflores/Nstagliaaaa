@@ -8,11 +8,11 @@
 /* THE VIDEO ON CONTACT PAGE */
 
 #nstalgiaVideo {
-    position: fixed;  /* keeps the video in place when user scrolls  */
-   min-width: 100%;  /* cover entire page */
-   min-height: 100%; /* cover entire page */
+    position: absolute;  
+   width: 100vw;  
+   height: 100vh; /*cover entire page */
     object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
-    z-index: -1; /* use this to send img to background */
+    z-index: -7; /* use this to send img to background */
  }
  
  /* form on contact us page  */
@@ -41,6 +41,7 @@
    background-color: gray;
    color: white; /* color goes to text */
    padding:10px 15px;
+   font-size: 16px;
    border:none;
  }
  
@@ -87,3 +88,78 @@
    color: darkgoldenrod;
  }
 
+/* BEST SELLERS on home page */
+.productcards h1 {
+  text-align: center;
+  
+}
+
+/* FAQ's */
+/* FAQ's */
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+width: 500px;
+}
+
+.item {
+  background: #f0ebe1;
+  margin-bottom: 8px;
+  padding: 12px 65px;
+
+}
+
+.title {
+  color: #85662b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+color:#333  
+}
+
+@media (max-width:650px){
+  .accordion {
+    width: 300px;
+    }
+  
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item {
+      background: #f0ebe1;
+      margin-bottom: 8px;
+      padding: 15px 30px;
+    
+    }
+    
+    .title {
+      color: #85662b;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+    }
+    .content {
+      color:#333;
+      font-size: 15px;;
+      }
+}

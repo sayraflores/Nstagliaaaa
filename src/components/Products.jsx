@@ -1,37 +1,47 @@
-import ProductTemp from './ProductTemp';
-import React from 'react';
+import Axios from 'axios';
+import React from 'react'
+import {useState, useEffect} from 'react'
 
-class Products extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { products: [], loading: false } // telling server not to load data yet 
-  }
-  componentWillMount() {
-    fetch('https://localhost:3001/Products')
-      .then((response) => {
-        return response.json();
-      },
-        (error) => {
-          this.setState({ error: error });
-          console.log(error.status);
-        }
-      )
-      .then((data) => {
-        this.setState({ products: data, loading: true }); // server will load products
-        console.log(this.state);
+
+const Products = () => {
+  const [items, setProducts] = useState([]); //
+  useEffect(() => {
+      Axios
+      .get('http://localhost:3001/Shop')
+      .then((res) => {
+      setProducts(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
       });
-  }render() {
-    return this.state.products.map((e) => (
-  <ProductTemp
-  key= {e.id}
-  title = {e.title}
-  price = {e.price}
-  description = {e.description}
-  image = {e.image}
-  />
-    )
-    )
-  }
+   
+    
+  }, []);
+  // const fetchProducts = () => {
+  //   axios
+  //   .get('http://localhost:3001/Products')
+  //   .then((res) => {
+  //     console.log(res);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err)
+  //   });
+  // };
+  return (
+    <> {items.map((val,index) => {
+      return(
+        
+        <div key={index}>
+          <img src={val.image} alt ="photo"/>
+          <h2>{val.title}</h2>
+          <p>{val.price}</p>
+          <p>{val.description}</p>
+        </div>
+      
+      )
+    })}
+    <div>Productsmngjrg</div>
+    </>
+  )
 }
-
 export default Products;

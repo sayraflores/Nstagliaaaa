@@ -38,6 +38,7 @@ const Contact = () => {
 
 
   <div className="form-group">
+    
       <label>Message</label>
       <textarea name="message"></textarea>
   </div>

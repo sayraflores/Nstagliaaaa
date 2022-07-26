@@ -5,6 +5,7 @@
     /* padding: 2rem 10vw; */
     border: solid 2px wheat;
     height: 100px;
+    position: inherit;
 }
 
 .newsletter-text h1{
