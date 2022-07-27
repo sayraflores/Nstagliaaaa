@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: process.env.DB_PASS,
+    password: '123456789',
     database: 'NstalgiaProductss'
 })
 
