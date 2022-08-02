@@ -4,7 +4,11 @@ import './Footer.css'
 const Footer = () => {
   return (
 
-<div className='newsletter'>
+
+  // <div className='footer'>
+  //   <h1>footer</h1>
+  // </div>
+  <div className='newsletter'>
 <ul className='social-icons'>
 
 <a href='https://www.facebook.com/shopnstalgia'>
@@ -25,9 +29,9 @@ const Footer = () => {
 <input type='email' placeholder='Enter your email'></input>
 <button type = 'submit'>Submit</button>
 </form>
+ 
 
-
-</div>
+ </div>
 
 
   

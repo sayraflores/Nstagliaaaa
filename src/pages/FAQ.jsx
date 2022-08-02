@@ -44,7 +44,7 @@ const data = [
   {
     question: 'Does Nostalgia have a store?',
     answer:
-      'We are currently vendors at The Hause located at Carolina Place Mall which is a vintage shop here in Charlotte. Make sure to check us out! '
+      'We are currently vendors at The Hause located at Carolina Place Mall which is a vintage shop here in Charlotte, North Carolina. Make sure to check us out! '
 
   },
 
@@ -55,12 +55,7 @@ const data = [
 
   },
 
-  {
-    question: 'How do I book a styling appointment?',
-    answer:
-      "You can DM us individually or book through our link posted on the 'about us' page on the top of this page."
-
-  }
+ 
 
 
 

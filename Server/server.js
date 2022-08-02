@@ -38,9 +38,41 @@ app.get('/Shop', (req, res)=> {
             res.send(result)
             console.log(result)
          }
-    })
+    })   
+});
+
+
+
+// filter 
+app.get('/hightolow', (req, res)=> {
+    db.query('SELECT * FROM Products ORDER BY PRICE ASC', (error, result) => {
+        if (error) {
+           return error
     
+      
+        }
+         else {
+            res.send(result)
+            console.log(result)
+         }
+    })   
 })
+
+app.get('/lowtohigh', (req, res)=> {
+    db.query('SELECT * FROM Products ORDER BY PRICE DESC', (error, result) => {
+        if (error) {
+           return error
+    
+      
+        }
+         else {
+            res.send(result)
+            console.log(result)
+         }
+    })   
+})
+
+
 app.listen(3001,()=> { // check to see if localhost:3001 is running
     console.log('running on port 3001');
 })

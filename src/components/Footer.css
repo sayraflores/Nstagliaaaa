@@ -1,20 +1,66 @@
-
 .newsletter {
-    background-color: #242423;
-    color: white;
-    /* padding: 2rem 10vw; */
-    border: solid 2px wheat;
-    height: 100px;
-    position: inherit;
+    background-color: white;
+    color: black;
+     padding: 2rem 10vw; 
+     margin: 1px; 
+    height: 100px; 
 }
 
 .newsletter-text h1{
 font-size: 25px;
 }
 i {
-    color: white;
+    color: black;
     padding: 3px;
     margin: 22px;
     font-size: 18px;
     
+} 
+
+.button {
+    color: blue;
 }
+
+/* footer with social media links */
+  /* footer with social media links */
+  footer {
+   background-color: #333;
+  }
+  .statementpt2 {
+    text-align: center;
+
+  }
+  .statement {
+    padding: 0;
+    text-align: center;
+  }
+ .fa {
+   padding: 10px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ /* Add a hover effect */
+ .fa:hover {
+   opacity: 0.7;
+ }
+ 
+ 
+ /* instagram */
+ .fa-instagram {
+   color: black;
+    text-align: center;
+ }
+ 
+ /* Twitter */
+ .fa-twitter {
+   color: black;
+ }
+ 
+ /* facebook */
+ .fa-facebook {
+   color: black;
+ }
+

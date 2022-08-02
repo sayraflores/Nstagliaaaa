@@ -1,30 +1,38 @@
 import React from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+import Card from "../components/Card";
+
 // import { Productcards } from "../components/Productcards";
 
 const images = [
-    { url: "images/slide1.png" },
-    { url: "images/slide2.png" },
-    { url: "images/slide3.png" },
+    { url: "images/another1.JPG" },
+    { url: "images/listoftees.jpg" },
+    { url: "images/anotherone3.JPG" },
     { url: "images/slide4.png" },
-    { url: "images/slide5.png" },
+    { url: "images/tigger.png" },
    
   ];
  const Home = () => {
     return (
-        <div>
+      <>
+        <div className ="SlideContainer">
        
           <SimpleImageSlider
-          className ="SlideContainer"
-            width={896}
-            height={504}
+          autoPlay= {true}
+            width={'70%'}
+            height={'88%'}
             images={images}
             showBullets={true}
             showNavs={true}
-          />
-            {/* <Productcards/> */}
-        </div>
+            style={{margin: "0px 0px 210px 210px"}}
         
+          />
+
+        </div>
+        <img src={`images/whitelogo.png`} alt = ""/>
+        <Card/>
+
+        </>
       );
     }
 export default Home;

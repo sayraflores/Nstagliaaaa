@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
   <div className='navbar'> 
    <i className="fa-solid fa-magnifying-glass"></i>
- <img  className='logo' src ={`images/whitelogo.png`} alt =""></img>
+   <a href = ""><img className='logo' src ={`images/blacklogo.png`} alt =""></img></a>
  
     <ul>
     <li><Link to='/Home'>Home</Link></li>

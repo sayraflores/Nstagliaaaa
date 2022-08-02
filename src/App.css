@@ -12,7 +12,7 @@
    width: 100vw;  
    height: 100vh; /*cover entire page */
     object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
-    z-index: -7; /* use this to send img to background */
+    z-index: -1; /* use this to send img to background */
  }
  
  /* form on contact us page  */
@@ -45,54 +45,7 @@
    border:none;
  }
  
- /* footer with social media links */
-  /* footer with social media links */
-  footer {
-   background-color: #333;
-  }
-  .statementpt2 {
-    text-align: center;
-
-  }
-  .statement {
-    padding: 0;
-    text-align: center;
-  }
- .fa {
-   padding: 10px;
-   font-size: 30px;
-   width: 50px;
-   text-align: center;
-   text-decoration: none;
- }
  
- /* Add a hover effect */
- .fa:hover {
-   opacity: 0.7;
- }
- 
- 
- /* instagram */
- .fa-instagram {
-   color: white;
-    text-align: center;
- }
- 
- /* Twitter */
- .fa-twitter {
-   color: darkgoldenrod;
- }
- 
- /* facebook */
- .fa-facebook {
-   color: darkgoldenrod;
- }
-
-/* BEST SELLERS on home page */
-.productcards h1 {
-  text-align: center;
-  
-}
 
 /* FAQ's */
 /* FAQ's */
@@ -104,10 +57,12 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
+
 }
 
 .accordion {
-width: 500px;
+width: 650px;
+padding: 20px;
 }
 
 .item {
@@ -126,9 +81,57 @@ width: 500px;
 }
 
 .content {
-color:#333  
+color:#333;
 }
 
+
+
+/* ecom produtcs  */
+.card_image {
+width: 100%;
+}
+
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.card_items {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99,99,99,0.2) opx 2px 8px 0px;;
+}
+
+.buttons {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius:  4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+  rgba(45,35,66,0.3) 0 7p 13px -3px, #d6d6e7 0 -3px 0 inset; 
+box-sizing: border-box;
+color: #ff5349;
+cursor: pointer;
+display: inline-flex;
+height: 48px;
+justify-content: center;
+line-height: 1;
+list-style: none;
+overflow: hidden;
+padding-left: 16px;
+padding-right: 16px;
+position: relative;
+text-align: ;
+
+}
+
+ /* } */
 @media (max-width:650px){
   .accordion {
     width: 300px;
@@ -162,4 +165,58 @@ color:#333
       color:#333;
       font-size: 15px;;
       }
-}
+
+      #nstalgiaVideo {
+        position: absolute;  
+       width: 100vw;  
+       height: 100vh; /*cover entire page */
+        object-fit: cover; /* sizes the background video to keep its original aspect ratio while filling the screen, clipping out edges of the video when necessary. */
+        z-index: -1; /* use this to send img to background */
+        display: flex;
+        flex-wrap: wrap;
+     }
+/* form on contact us page  */
+  /* form on contact us page  */
+  .my-form {
+    padding:10px;
+    font-size: 80%; 
+    color:white;
+    border-style: double;
+  }
+  
+  .my-form .form-group {
+    padding-bottom:8px;
+  }
+  
+  .my-form label{
+    display:block;
+  }
+  
+  .my-form input [type="text"], .my-form textarea{
+    padding:5px;
+    width:20%;
+  }
+  
+  .my-form input[type="submit"] {
+    background-color: gray;
+    color: white; /* color goes to text */
+    padding:10px 15px;
+    font-size: 16px;
+    border:none;
+  }
+    .button {
+      border: none;
+      outline: 0;
+      padding: 10px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+  }
+
+     /* ecom products */
+     /* ecom products */
+
+    }
