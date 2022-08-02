@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import FAQ from './pages/FAQ';
-
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 function App() {
   return (
@@ -18,10 +18,15 @@ function App() {
   <Route path='/Contact' exact="true" element= {<Contact/>}/>
   <Route path='/FAQ' exact="true" element= {<FAQ/>}/>
 </Routes>
+
+
+
 <Footer/>
  
 </div>
+
   );
+  
 }
 
 export default App;

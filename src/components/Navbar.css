@@ -7,6 +7,10 @@
 /* nav bar */
 /* nav bar */
 
+i {
+    color: aqua;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -17,11 +21,11 @@ ul {
 
 li a {
     text-decoration: none;
-    color: white;
+    color:#85662b;
 }
 li a:hover {
-    background-color: black;
-    padding: 15px;
+    background-color: none;
+    padding: 10px;
 }
 
 li {
@@ -35,14 +39,29 @@ margin: 15px;
 }
 
 .navbar {
-    background-color: #242423;
+    background-color: white;
     height: 60px;
     padding: 10px 40px;
+    margin: 10px;
 }
 
 .fa-solidfa-magnifying-glass{
     background-color: black;
 }
 
+
 /* end of nav bar */
 /* end of nav bar */
+
+@media (max-width:650px) {
+    li {
+        font-size: 15px;
+        margin: 6px;
+
+    }
+    .logo {
+    height: 12px;
+    margin: 10px;
+    }
+
+}

@@ -5,14 +5,14 @@ const Contact = () => {
     <div>
 
 <video autoPlay muted loop id="nstalgiaVideo">
-<source src="images/nstalgia.mov" type="video/mp4"></source>
+<source src="images/nstalgia.MP4" type="video/mp4"></source>
  
 </video>
     
 <form className="my-form">
     <div className="form-group">
      <label>First Name</label>
-     <textarea name="firstname"></textarea>
+     <textarea name="lastname"></textarea>
 </div>
   
 
@@ -38,12 +38,14 @@ const Contact = () => {
 
 
   <div className="form-group">
+    
       <label>Message</label>
       <textarea name="message"></textarea>
   </div>
   
-  <input type="submit" name="submit" value="submit"></input>
+  <input type="submit" name="submit" value="Submit"></input>
     </form>
+    
 
 </div>
 
